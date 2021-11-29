@@ -15,7 +15,8 @@ mmc_feinberg(
   fill_na = FALSE,
   full_result = FALSE,
   write_to_disk = FALSE,
-  chunk_size = NA
+  chunk_size = NA,
+  saveto = NA
 )
 }
 \arguments{
@@ -40,6 +41,8 @@ mmc_feinberg(
 \item{write_to_disk}{Logical. If the output is too large to fit in memory, it is saved to user's current directory as a compress .gz file.}
 
 \item{chunk_size}{An integer. Size of chunks for processng and saving the data.}
+
+\item{saveto}{Path for saving the result.}
 }
 \value{
 The function outputs a data.table with the following columns:

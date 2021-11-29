@@ -14,7 +14,8 @@ mmc_bgsm(
   fill_na = FALSE,
   full_result = FALSE,
   write_to_disk = FALSE,
-  chunk_size = NA
+  chunk_size = NA,
+  saveto = NA
 )
 }
 \arguments{
@@ -30,13 +31,15 @@ mmc_bgsm(
 
 \item{subset_row}{A vector of logical expression indicating elements or rows to keep.}
 
-\item{fill_na}{Logical. True to fill NAs in the data with 0.}
+\item{fill_na}{Logical. True to fill NA in the data with 0.}
 
 \item{full_result}{Logical. True to display all intermediate working numbers.}
 
 \item{write_to_disk}{Logical. If the output is too large to fit in memory, it is saved to user's current directory as a compress .gz file.}
 
-\item{chunk_size}{An integer. Size of chunks for processng and saving the data. Higher chunk size will increase memory usage but may shorten the time to write results to the disk.}
+\item{chunk_size}{An integer. Size of chunks for processing and saving the data. Higher chunk size will increase memory usage but may shorten the time to write results to the disk.}
+
+\item{saveto}{Path for saving the result.}
 }
 \value{
 The function outputs a data.table with the following columns:
