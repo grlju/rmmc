@@ -223,7 +223,7 @@ mmc_ekcount = function(data, firm_col, date_col = NA, level, market_cols = NA, s
   market_y = paste0(market_cols, ".y")
 
   if (is.na(saveto)){
-    save_path = save_path
+    save_path = NA
   } else {
     save_path = saveto
   }

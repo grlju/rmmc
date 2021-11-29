@@ -225,7 +225,7 @@ mmc_feinberg = function(data, matrix_m, firm_col, date_col = NA, level, market_c
   }
 
   if (is.na(saveto)){
-    save_path = save_path
+    save_path = NA
   } else {
     save_path = saveto
   }

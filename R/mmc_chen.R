@@ -231,7 +231,7 @@ mmc_chen = function(data, matrix_m, firm_col, date_col = NA, level, market_cols 
   }
 
   if (is.na(saveto)){
-    save_path = save_path
+    save_path = NA
   } else {
     save_path = saveto
   }

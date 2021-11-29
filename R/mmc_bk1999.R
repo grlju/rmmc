@@ -234,7 +234,7 @@ mmc_bk1999 = function(data, matrix_m, firm_col, date_col = NA, level, market_col
   }
 
   if (is.na(saveto)){
-    save_path = save_path
+    save_path = NA
   } else {
     save_path = saveto
   }
