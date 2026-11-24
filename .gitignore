@@ -1,4 +1,12 @@
+# R session files
 .Rproj.user
 .Rhistory
 .RData
 .Ruserdata
+
+# Build and check output
+*.tar.gz
+*.Rcheck/
+
+# Reference papers (copyrighted; keep locally)
+*.pdf
